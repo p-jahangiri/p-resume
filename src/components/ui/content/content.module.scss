@@ -1,28 +1,24 @@
 @import '../../../assets//styles//base.scss';
 
 .head {
-   @include center;
+    @include center;
     img {
-    @include icon;
+        @include icon;
     }
     hr {
-        @include hr
+        @include hr;
     }
 }
-.fSkill {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0.5rem 0.5rem 0.5rem 3rem;
-
+.Skill {
+    @include wrap;
     p {
-        flex: 1 2 50%;
+        flex: 2;
+        margin: 1rem 1.8rem;
         font-size: 1rem;
     }
 }
-.list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0.5rem 0.5rem 0.5rem 3rem;
+.hobbies {
+  @include wrap;
 
     div {
         @include center;
@@ -30,14 +26,12 @@
         margin: 1rem;
         font-size: 1rem;
         img {
-            @include icon
+            @include icon;
         }
     }
 }
-.cont {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0.5rem 0.5rem 0.5rem 3rem;
+.contact {
+   @include wrap;
 
     div {
         display: flex;
@@ -47,7 +41,7 @@
         margin: 1rem;
         font-size: 1rem;
         img {
-            @include icon
+            @include icon;
         }
     }
 }
@@ -55,90 +49,71 @@
     display: flex;
     hr {
         @include hr;
-        width:40vh;
+        width: 40vh;
     }
 }
+
 @media screen and (min-width: 767px) {
-    .list {
+    .hobbies{
         div {
             flex: 2;
             margin: 1rem;
-            padding: 2rem;
+            margin:1rem  2rem;
         }
     }
-    .cont {
+    .contact {
         display: flex;
 
         div {
             flex: 2;
-            padding: 3rem;
+           margin: 1rem 2rem
         }
     }
-}
-@media screen and (min-width: 767px) {
-    .list {
-        div {
-            flex: 2;
-            margin: 1rem;
-            padding: 2rem;
-        }
-    }
-    .cont {
-        display: flex;
-
-        div {
-            flex: 2;
-            padding: 3rem;
-        }
-    }
-    .fSkill {
-        @include justify;
-        margin: 1rem;
-        margin-left: 3rem;
+    .Skill{
+        margin: 1rem 0.5rem;
         p {
-            flex: 1 2 25%;
+            margin:1.2rem 2.5rem;
         }
     }
 }
 @media screen and (min-width: 992px) {
-    .list {
+    .hobbies {
         div {
             display: flex;
             padding: 0;
-            padding-right: 8rem;
+            margin:1.5rem 3rem;
         }
     }
-    .cont {
+    .contact{
         display: flex;
+        justify-content: center;
 
         div {
             display: flex;
             padding: 0;
-            padding-right: 8rem;
+            margin: 1.5rem 3rem;
         }
     }
-    .fSkill {
-        @include justify;
+    .Skill {
         margin: 1rem;
-        margin-left: 3rem;
-        p {
-            flex: 1 2 25%;
+        
+        p {margin: 1.5rem  3rem;
         }
     }
 }
 @media print {
-    .content {
+    .cont {
         margin-top: 1rem;
         margin-bottom: 0;
         hr {
             margin-top: 10px;
         }
     }
-    .cont {
+    .contact{
         display: flex;
         div {
             flex: 2;
-            padding: 3rem;
+            margin: 3rem;
         }
     }
 }

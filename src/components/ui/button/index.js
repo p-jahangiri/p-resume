@@ -29,7 +29,7 @@ const Button = () => {
                     id="dn"
                     onChange={() => setThemeState(!themeState)}
                 />
-                <label for="dn" className="toggle">
+                <label htmlFor="dn" className="toggle">
                     <span className="toggle__handler">
                         <span className="crater crater--1"></span>
                         <span className="crater crater--2"></span>
