@@ -1,0 +1,61 @@
+body {
+    background-color: #e7dede;
+}
+.container {
+    position: relative;
+    background-color: #f5f5f5;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgb(158, 243, 177), 0 0 10px rgb(157, 247, 177);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    ws &-track {
+        background: #bbb1ac;
+    }
+    &-thumb {
+        background: #0aef2d;
+        border-radius: 50px;
+    }
+}
+.dark-mode {
+    background-color: #4c4948;
+    color: rgb(255, 255, 255);
+    .container {
+        background-color: #3f3e3e;
+    }
+    h1:hover span {
+        color: rgb(245, 245, 235);
+        text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff,
+            0 0 40px #ffffff;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .container {
+        margin: 3rem 2rem;
+        padding: 1.5rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        margin: 3rem 3rem;
+        padding: 1.5rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .container {
+        margin: 2rem 4rem;
+        padding: 1.5rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        margin: 4rem 13rem;
+        padding: 2rem;
+    }
+}
+

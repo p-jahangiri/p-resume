@@ -1,0 +1,35 @@
+
+h1{
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #35a33e;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+h1 span {
+    transform: 0.5s;
+}
+h1:hover span:nth-child(1) {
+    margin-right: 10px;
+}
+h1:hover span:nth-child(3) {
+    margin-left: 10px;
+}
+h1:hover span:nth-child(4) {
+    margin-left: 10px;
+}
+h1:hover span:nth-child(1):after {
+    content: "'";
+}
+h1:hover span {
+    color: #0f323b;
+    text-shadow: 0 0 10px #00ff55,
+                  0 0 20px #0aef2d,
+                  0 0 30px #0aef2d,
+                  0 0 40px #0aef2d,
+                  0 0 50px #4FFF17,
+                  0 0 60px #17CFFF,
+                  ;
+}

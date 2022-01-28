@@ -1,0 +1,144 @@
+@import '../../../assets//styles//base.scss';
+
+.head {
+   @include center;
+    img {
+    @include icon;
+    }
+    hr {
+        @include hr
+    }
+}
+.fSkill {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem 0.5rem 0.5rem 3rem;
+
+    p {
+        flex: 1 2 50%;
+        font-size: 1rem;
+    }
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem 0.5rem 0.5rem 3rem;
+
+    div {
+        @include center;
+        flex: 2;
+        margin: 1rem;
+        font-size: 1rem;
+        img {
+            @include icon
+        }
+    }
+}
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem 0.5rem 0.5rem 3rem;
+
+    div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex: 1 100%;
+        margin: 1rem;
+        font-size: 1rem;
+        img {
+            @include icon
+        }
+    }
+}
+.hr {
+    display: flex;
+    hr {
+        @include hr;
+        width:40vh;
+    }
+}
+@media screen and (min-width: 767px) {
+    .list {
+        div {
+            flex: 2;
+            margin: 1rem;
+            padding: 2rem;
+        }
+    }
+    .cont {
+        display: flex;
+
+        div {
+            flex: 2;
+            padding: 3rem;
+        }
+    }
+}
+@media screen and (min-width: 767px) {
+    .list {
+        div {
+            flex: 2;
+            margin: 1rem;
+            padding: 2rem;
+        }
+    }
+    .cont {
+        display: flex;
+
+        div {
+            flex: 2;
+            padding: 3rem;
+        }
+    }
+    .fSkill {
+        @include justify;
+        margin: 1rem;
+        margin-left: 3rem;
+        p {
+            flex: 1 2 25%;
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    .list {
+        div {
+            display: flex;
+            padding: 0;
+            padding-right: 8rem;
+        }
+    }
+    .cont {
+        display: flex;
+
+        div {
+            display: flex;
+            padding: 0;
+            padding-right: 8rem;
+        }
+    }
+    .fSkill {
+        @include justify;
+        margin: 1rem;
+        margin-left: 3rem;
+        p {
+            flex: 1 2 25%;
+        }
+    }
+}
+@media print {
+    .content {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        hr {
+            margin-top: 10px;
+        }
+    }
+    .cont {
+        display: flex;
+        div {
+            flex: 2;
+            padding: 3rem;
+        }
+    }
+}
